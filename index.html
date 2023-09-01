@@ -137,7 +137,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
 }
 #es-rc.es-rc .es-kv__subtitle {
   position: absolute;
-  bottom: 5%;
+  bottom: 3%;
   left: 5%;
 }
 @media (min-width: 768px) {
@@ -280,10 +280,12 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   font-size: 26px !important;
   color: #fff !important;
   text-shadow: 0px 0px 50px #004999 !important;
+  padding-top: 2rem!important;
 }
 @media (min-width: 768px) {
   #es-rc.es-rc .es-description__text2 {
     font-size: 20px !important;
+    padding-top: unset!important;
   }
 }
 #es-rc.es-rc .es-description__text3 {
@@ -326,7 +328,11 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
     grid-template-columns: 64% 36%;
     place-items: center;
   }
+  #es-rc.es-rc .es-description__img {
+  padding-top: 3rem;
 }
+}
+
 #es-rc.es-rc .es-why__title {
   width: 100%;
   text-align: center !important;
@@ -341,7 +347,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 0 !important;
-  font-size: 20px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.2;
@@ -359,8 +365,8 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
 }
 #es-rc.es-rc .es-why__text--3 {
   position: relative;
-  left: 5%;
-  font-size: 25px;
+  left: -4%;
+  font-size: 30px;
   transform: rotate(-1.5deg);
   line-height: 1.3;
 }
@@ -475,7 +481,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 32px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 0.8;
@@ -492,7 +498,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
 }
 #es-rc.es-rc .es-video__text--2 {
   text-align: left;
-  font-size: 40px;
+  font-size: 30px;
   transform: rotate(-1.5deg);
   line-height: 1.1;
 }
@@ -540,7 +546,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 24px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.3;
@@ -687,7 +693,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   font-weight: 900;
   transform: rotate(-3deg);
   margin: 0 auto 10px !important;
-  font-size: 24px;
+  font-size: 25px;
   border-radius: 5px;
   font-family: "MuseoSans";
   line-height: 1.3;
@@ -804,6 +810,25 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
     left: 3% !important;
   }
 }
+.es-kv__text1 {
+    font-size: 20px !important;
+    line-height: 0.8;
+  }
+  .es-kv__text1 sup {
+    font-size: 10px !important;
+    top: -10px !important;
+  }
+  .es-kv__text1--red {
+    font-size: 15px !important;
+    line-height: 1.3;
+  }
+  .es-kv__text1--middle {
+    line-height: 0.5;
+  }
+  .es-kv__text1--blue {
+    font-size: 15px;
+    line-height: 1.3;
+  }
 @media (min-width: 440px) {
   .es-kv__text {
     font-size: 31px !important;
@@ -1121,7 +1146,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
                 <p class="es-description__text2 ">W <strong>KASZLU MOKRYM</strong><br>pomocne są leki wykrztuśne<br>-
                   np. syrop Mucosolvan.</p>
               </div>
-              <div class="col-12 col-sm-12 col-md-10 pt-5">
+              <div class="col-12 col-sm-12 col-md-10 es-description__img">
                 <img alt="Szukasz leków na rozrzedzenie flegmy w gardle? Zastanawiasz się co na mokry kaszel u dziecka? Sięgnij po syrop Mucosolvan." class="img-fluid rounded pb-0" src="./images/description-packshot.webp">
               </div>
             </div>
@@ -1225,8 +1250,8 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
                         <td class="text-center  py-3">
                           <p class="es-dose__textBig m-0">Substancje pomocnicze:</p>
                           <img src="./images/dose-line.webp" alt="" class="img-fluid"><br>
-                          sukraloza, kwas benzoesowy, hydroksyetyloceluloza, aromat owoców truskawkowych PHL-132200,
-                          aromat waniliowy PHL-114481, woda oczyszczona.
+                          sukraloza, kwas benzoesowy, hydroksyetyloceluloza, aromat owoców truskawkowych PHL&#8209;132200,
+                          aromat waniliowy PHL&#8209;114481, woda oczyszczona.
                         </td>
                       </tr>
                     </tbody>
@@ -1391,7 +1416,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
             <div class="row text-center justify-content-sm-center no-gutters px-3">
               <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 m-auto pt-5">
                 <div class="es-articles__box">
-                  <img alt="Zastanawiasz się, czy to mokry czy suchy kaszel? Kliknij, aby dowiedzieć się więcej i poznać sprawdzone sposoby na kaszel." class="img-fluid rounded pb-3" src="./images/article-1.webp">
+                  <a href="https://www.apteka-melissa.pl/blog/artykul/kaszel-jak-rozpoznac-jego-rodzaj-i-skrocic-czas-trwania,1285.html" target="_blank"><img alt="Zastanawiasz się, czy to mokry czy suchy kaszel? Kliknij, aby dowiedzieć się więcej i poznać sprawdzone sposoby na kaszel." class="img-fluid rounded pb-3" src="./images/article-1.webp"></a>
                   <p class="es-articles__subtitle">Kaszel - jak rozpoznać jego rodzaj<br> i&nbsp;skrócić czas trwania
                   </p>
                   <p class="mt-4"><a class="es-articles__button" href="https://www.apteka-melissa.pl/blog/artykul/kaszel-jak-rozpoznac-jego-rodzaj-i-skrocic-czas-trwania,1285.html" target="_blank">Dowiedz się więcej</a></p>
@@ -1399,7 +1424,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
               </div>
               <div class="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-6 m-auto pt-5">
                 <div class="es-articles__box">
-                  <img alt="Kliknij tutaj, aby dowiedzieć się, jak postępować w przypadku gęstej wydzieliny w gardle, a jak w przypadku kaszlu suchego." class="img-fluid rounded pb-3" src="./images/article-2.webp">
+                  <a href="https://www.apteka-melissa.pl/blog/artykul/postepowanie-w-kaszlu-rekomendacje-i-wytyczne,1286.html" target="_blank"><img alt="Kliknij tutaj, aby dowiedzieć się, jak postępować w przypadku gęstej wydzieliny w gardle, a jak w przypadku kaszlu suchego." class="img-fluid rounded pb-3" src="./images/article-2.webp"></a>
                   <p class="es-articles__subtitle">Postępowanie w kaszlu<br> - rekomendacje i wytyczne</p>
                   <p class="mt-4"><a class="es-articles__button" href="https://www.apteka-melissa.pl/blog/artykul/postepowanie-w-kaszlu-rekomendacje-i-wytyczne,1286.html" target="_blank">Dowiedz się więcej</a></p>
                 </div>
