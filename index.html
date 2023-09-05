@@ -511,7 +511,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
 #es-rc.es-rc .es-cross__bg {
   position: absolute;
   width: 100%;
-  height: 410px;
+  height: 400px;
   bottom: 0;
   left: 0;
   background: rgb(68, 152, 209);
@@ -532,10 +532,9 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
 #es-rc.es-rc .es-cross__title {
   width: 100%;
   text-align: center !important;
-}
-#es-rc.es-rc .es-cross__title {
   animation: slideleft 1s ease forwards;
 }
+
 #es-rc.es-rc .es-cross__text {
   text-align: center;
   color: #fff;
@@ -571,11 +570,11 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   border-width: 0px !important;
   border-style: solid !important;
 }
-#es-rc.es-rc .es-cross__emptyImage {
+/* #es-rc.es-rc .es-cross__emptyImage {
   display: block;
   height: 271px !important;
   padding-top: 50px;
-}
+} */
 #es-rc.es-rc .es-cross__badge {
   position: absolute;
   top: 0%;
@@ -596,7 +595,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   border-radius: 5px;
   margin-left: -10px !important;
 }
-#es-rc.es-rc .es-cross__row {
+/* #es-rc.es-rc .es-cross__row {
   vertical-align: middle;
   text-align: left !important;
   padding-left: 15px !important;
@@ -604,41 +603,9 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   font-weight: 500;
   color: #fff;
   font-size: 14px !important;
-}
-@media (min-width: 567px) {
-  #es-rc.es-rc .es-cross__row {
-    padding-left: 32px !important;
-  }
-}
-#es-rc.es-rc .es-cross__row--1 {
-  height: 82px;
+} */
 
-}
-#es-rc.es-rc .es-cross__row--2 {
-  height: 64px;
-}
-#es-rc.es-rc .es-cross__row--3 {
-  height: 40px;
-}
-#es-rc.es-rc .es-cross__row--4 {
-  height: 88px;
-}
-@media (min-width: 768px) {
-  /* #es-rc.es-rc .es-cross__row--1 {
-    height: 80px;
-  } */
-  #es-rc.es-rc .es-cross__row--2
-  #es-rc.es-rc .es-cross__row--3
-  #es-rc.es-rc .es-cross__row--4 {
-    height: 64px;
-  }
-}
-#es-rc.es-rc .es-cross__row--5 {
-  height: 40px;
-}
-#es-rc.es-rc .es-cross__row--6 {
-  height: 84.59px;
-}
+
 #es-rc.es-rc .es-cross__head {
   font-family: "MuseoSans";
   font-size: 22px !important;
@@ -670,6 +637,8 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   color: #fff;
   font-size: 16px !important;
   font-weight: 300;
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: middle;
 }
 #es-rc.es-rc .es-cross td span {
   font-weight: 700;
@@ -678,6 +647,22 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   border: none !important;
   min-width: 90px;
 }
+#es-rc.es-rc .es-cross__table {
+  overflow-x: scroll;
+  margin-left: 170px;
+  overflow-y: visible;
+  padding: 0;
+}
+#es-rc.es-rc .es-cross__left {
+  position: absolute;
+  left: 0;
+  top: auto;
+  border-top-width: 1px;
+  /*only relevant for first row*/
+  margin-top: -1px;
+  /*compensate for top border*/
+}
+
 #es-rc.es-rc .es-articles__title {
   width: 100%;
   text-align: center !important;
@@ -1291,7 +1276,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
               </div>
             </div>
             <div class="row ">
-              <div class="col-4 col-sm-3 col-md-2 p-0 m-0">
+              <!-- <div class="col-4 col-sm-3 col-md-2 p-0 m-0">
                 <table class="table text-center">
                   <thead>
                     <tr>
@@ -1321,12 +1306,13 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
                     </tr>
                   </tbody>
                 </table>
-              </div>
-              <div class="col-8 col-sm-9 col-md-10 p-0 m-0">
+              </div> -->
+              <div class="col-12 p-0 m-0">
                 <div class="table-responsive p-0 es-cross__table">
                   <table class="table text-center">
                     <thead>
                       <tr>
+                        <th class="pb-0 es-cross__left">&nbsp;</th>
                         <th scope="col" class="pb-0 position-relative">
                           <a href="https://www.apteka-melissa.pl/produkt/mucosolvan-syrop-003-200-ml,2539.html" target="_blank"><img src="./images/cross-1.webp" alt=""
                             class="img-fluid es-cross__image es-cross__image--big "></a>
@@ -1344,35 +1330,41 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr class="es-cross__row--name">
+                        <td class="es-cross__left">&nbsp;</td>
                         <td><span class="es-cross__head">MUCOSOLVAN<br>200ml</span></td>
                         <td><span class="es-cross__head">MUCOSOLVAN<br>100ml</span></td>
                         <td><span class="es-cross__head">MUCOSOLVAN<br>MINI</span></td>
                         <td><span class="es-cross__head">MUCOSOLVAN<br>TABLETKI</span></td>
                       </tr>
-                      <tr>
+                      <tr class="es-cross__row--type">
+                        <td class="es-cross__left es-cross__row--type"><br/>Typ Produktu</td>
                         <td><span>Syrop</span><br>Lek bez recepty</td>
                         <td><span>Syrop</span><br>Lek bez recepty</td>
                         <td><span>Syrop</span><br>Lek bez recepty</td>
                         <td><span>Tabletki</span><br>Lek bez recepty</td>
                       </tr>
-                      <tr>
+                      <tr class="es-cross__row--properties">
+                        <td class="es-cross__left es-cross__row--properties">Właściwości</td>
                         <td colspan="2">Ułatwia odkrztuszanie, łagodzi kaszel</td>
                         <td colspan="2">Ułatwia odkrztuszanie, łagodzi kaszel</td>
                       </tr>
-                      <tr>
+                      <tr class="es-cross__row--ingredients">
+                        <td class="es-cross__left es-cross__row--ingredients"><br/>Składnik</td>
                         <td>30 mg/5 ml Ambroxoli hydrochloridum</td>
                         <td>30 mg/5 ml Ambroxoli hydrochloridum</td>
                         <td>30 mg/5 ml Ambroxoli hydrochloridum</td>
                         <td>30 mg Ambroxoli hydrochloridum</td>
                       </tr>
-                      <tr>
+                      <tr class="es-cross__row--packaging">
+                        <td class="es-cross__left es-cross__row--packaging">Opakowanie</td>
                         <td>200 ml</td>
                         <td>100 ml</td>
                         <td>100 ml</td>
                         <td>20 tabletek</td>
                       </tr>
-                      <tr>
+                      <tr class="es-cross__row--CTA">
+                        <td class="es-cross__left es-cross__row--CTA">&nbsp;</td>
                         <td>
                           <p class="mt-4"><a class="es-articles__button" href="https://www.apteka-melissa.pl/produkt/mucosolvan-syrop-003-200-ml,2539.html" target="_blank">Sprawdź</a></p>
                         </td>
@@ -1390,7 +1382,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
                   </table>
                 </div>
               </div>
-              <div class="es-cross__bg"></div>
+              <div class="es-cross__bg">&nbsp;</div>
             </div>
           </div>
         </section>
