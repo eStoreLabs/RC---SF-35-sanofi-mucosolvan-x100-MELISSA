@@ -15,9 +15,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
 .fdb-block {
     margin-top:3em;
 }
-#es-rc-content {
-    background:url("./imgs/checkerboard.png") 0 0 repeat;
-}
+
 @keyframes es-animation-element-pulse {
     0% {
         transform: scale(0.85);
@@ -629,7 +627,7 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
 }
 #es-rc.es-rc .es-cross tbody {
   height: 400px;
-  z-index: 2;
+  /* z-index: 2; */
 }
 #es-rc.es-rc .es-cross td {
   font-family: "Montserrat";
@@ -652,6 +650,15 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   margin-left: 170px;
   overflow-y: visible;
   padding: 0;
+  
+}
+#es-rc.es-rc .es-cross__table tr {
+  z-index: 1;
+  background: transparent;
+}
+#es-rc.es-rc .es-cross__table td {
+  z-index: 2;
+  background: transparent;
 }
 #es-rc.es-rc .es-cross__left {
   position: absolute;
@@ -661,6 +668,10 @@ p{margin-top:0;margin-bottom:1rem}p{margin-bottom:1rem}img{vertical-align:middle
   /*only relevant for first row*/
   margin-top: -1px;
   /*compensate for top border*/
+  
+}
+#es-rc.es-rc .es-cross__left td {
+  z-index: 3;
 }
 
 #es-rc.es-rc .es-articles__title {
